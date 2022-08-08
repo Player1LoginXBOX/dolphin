@@ -15,7 +15,7 @@ add_dolphin_test(ESFormatsTest IOS/ES/FormatsTest.cpp)
 
 add_dolphin_test(FileSystemTest IOS/FS/FileSystemTest.cpp)
 
-if(_M_X86)
+if(_M_X86_64)
   add_dolphin_test(PowerPCTest
     PowerPC/DivUtilsTest.cpp
     PowerPC/Jit64Common/ConvertDoubleToSingle.cpp

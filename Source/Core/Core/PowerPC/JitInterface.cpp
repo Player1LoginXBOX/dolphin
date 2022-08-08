@@ -30,7 +30,7 @@
 #include "Core/PowerPC/PowerPC.h"
 #include "Core/PowerPC/Profiler.h"
 
-#if _M_X86
+#if _M_X86_64
 #include "Core/PowerPC/Jit64/Jit.h"
 #endif
 
@@ -54,7 +54,7 @@ CPUCoreBase* InitJitCore(PowerPC::CPUCore core)
 {
   switch (core)
   {
-#if _M_X86
+#if _M_X86_64
   case PowerPC::CPUCore::JIT64:
     g_jit = new Jit64();
     break;
